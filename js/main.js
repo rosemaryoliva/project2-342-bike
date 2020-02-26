@@ -1,3 +1,11 @@
+$(document).on( 'scroll', function(){
+  var counter = $(document).scrollTop();
+  var translate = Math.floor(counter / 5);
+  $('.counter').text(translate);
+  
+  $('img').css('transform', 'translateY(-' + translate + 'px)');
+  
+});
 
 //this is where we apply opacity to the arrow
 $(window).scroll( function(){
@@ -106,7 +114,7 @@ $(function() {
  window.addEventListener('scroll', () => {
   let page = this;
   let pageTop = this.scrollY;
-  let pageHeight = this.outerHeight /0 ;
+  let pageHeight = this.outerHeight /2 ;
   
   let frames = document.querySelectorAll('.scrollAnim');
   frames.forEach( frame => {
@@ -121,3 +129,4 @@ $(function() {
     }
   });
 });
+

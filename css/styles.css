@@ -21,33 +21,27 @@ html {
   display: block;
   text-align: center;
   margin: 0;
-  top: 10%;
+  top: 45%;
   transform: translateY(-50%);
   font-size: 14vw;
   color: white;
   font-weight: 400;
 }
 
-.block h3{
-  font-family: 'Odibee Sans', cursive;
-  color: red;
-  opacity: 60%;
+h3{
+  font-family: 'Pacifico';
+  color: lightblue;
+  opacity: 80%;
   position: relative;
   display: block;
   text-align: center;
   margin: 0;
-  top: 30%;
+  top: 32%;
   transform: translateY(-50%);
-  font-size: 8vw;
+  font-size: 5vw;
 }
 .img-parallax {
   width: 100vmax;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%,0);
-  pointer-events: none
 }
 
 .title-right{
@@ -155,7 +149,7 @@ body {
   position:absolute;
   z-index:1;
   left:50%;
-  top: 36em;
+  top: 72%;
   margin-left:-5em;
   background:#111;
   width:10em;
@@ -345,23 +339,11 @@ body{
 .scrollAnim.anim{
   opacity: 1;
 }
-h1, h2{
-  display: block;
-  color: #eee;
-  font-size: 4em;
-  font-weight: bold;
-  margin: 0;
-  line-height: 1.2em;
-  transition: all 0.8s;
-  padding-left: 0;
-  font-family: "Anton", sans-serif;
-}
 .anim h1, .anim h2{
   transition-delay: 0.1s;
 }
 
 p{
-  font-size: 0.9em;
   transition: all 1.2s;
 }
 .anim-top{
@@ -380,22 +362,6 @@ p{
 .steps{
   width: 100%;
   margin: auto;
-}
-
-button{
-  color: #333;
-  background-color: #eee;
-  border: none;
-  padding: 0.5em;
-  width: 9em;
-  margin: 0.2em;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-button:hover{
-  background-color: #ddd;
 }
 
 .scroller{
@@ -425,4 +391,30 @@ button:hover{
   100%{
     opacity: 0;
   }
+}
+
+
+
+
+
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+  background: #344;
+}
+.parallax img {
+  position: relative;
+  min-width: 100%;
+  margin-left: -60%;
+  left: 50%;
+  min-height: 200%;
+  margin-top: -60%;
+  opacity: .7;
+}
+.parallax:nth-child(2) img {
+  transform: translateY(-10px);
+}
+.parallax__inner {
+  position: relative;
 }
